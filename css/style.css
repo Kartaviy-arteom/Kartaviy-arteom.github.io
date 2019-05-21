@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Rotonda C";
-  font-weight: bold;
+  font-weight: 400;
   src: url("../fonts/RotondaC.woff") format("woff");
 }
 
@@ -25,7 +25,7 @@
 }
 
 .widget {
-  position: fixed;
+  position: relative;
   top: 5vh;
   left: 5vh;
   width: 300px;
@@ -38,10 +38,10 @@
 .widget__wrapper {
   position: relative;
   background-color: #2856a8;
-  padding-top: 10px;
+  padding-top: 16px;
   padding-left: 17px;
   padding-right: 17px;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
   margin-bottom: 15px;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -117,9 +117,9 @@
 .widget__user-discont {
   width: 95px;
   box-sizing: border-box;
-  padding-left: 13px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-left: 23px;
+  padding-top: 8px;
+  padding-bottom: 7px;
   font-size: 25px;
   line-height: 28px;
   color: rgb(241,208,47);
@@ -138,14 +138,16 @@
   line-height: 18px;
   color: rgb(72,72,72);
   padding-right: 17px;
+  font-family: "Myriad-Pro";
+  font-weight: 400;
 }
 
 .widget__social {
   margin: 0;
   margin-bottom: 19px;
   padding: 0;
-  padding-left: 17px;
-  padding-right: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -204,14 +206,22 @@
 
 .widget__text-form {
   width: 100%;
-  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Rotonda C";
+  color: #484848;
+  margin-bottom: 10px;
   min-height: 150px;
   max-height: 150px;
   resize: none;
-  padding: 0 10px;
+  padding: 10px 10px; 
   box-sizing: border-box;
   border: 1px solid #2856a8;
   border-radius: 5px;
+}
+
+.widget__text-form::placeholder {
+  opacity: 1;
 }
 
 .widget__btn--submit {
@@ -242,12 +252,17 @@
 
 .widget__description-adress {
   width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Rotonda C";
+  color: #2856a8;
   display: inline-block;
   background-color: #ffffff;
   border: 2px dashed #2856a8;
   border-radius: 8px;
   padding: 10px 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .widget__btn--open-rules {
@@ -264,7 +279,7 @@
 .widget__btn--open-rules::after {
   position: absolute;
   content: "";
-  width: 7px;
+  width: 8px;
   height: 2px;
   top: 0;
   left: 0;
@@ -277,11 +292,12 @@
 
 .widget__btn--open-rules::after {
   transform: rotate(-45deg);
-
 }
 
 .widget__rules {
   padding: 0;
+  margin: 0;
+  margin-bottom: 18px;
   color: #ffffff;
   font-size: 12px;
   line-height: 18px;
